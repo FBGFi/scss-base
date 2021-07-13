@@ -1,0 +1,49 @@
+// Color tests
+.color-box{
+    padding: 20px;
+    border: 2px solid black;
+}
+.color-box:nth-child(1){
+    background-color: var(--main-color);
+}
+.color-box:nth-child(2){
+    background-color: var(--main-color-light);
+}
+.color-box:nth-child(3){
+    background-color: var(--main-color-dark);
+}
+.color-box:nth-child(4){
+    background-color: var(--secondary-color);
+}
+.color-box:nth-child(5){
+    background-color: var(--secondary-color-light);
+}
+.color-box:nth-child(6){
+    background-color: var(--secondary-color-dark);
+}
+.color-box:nth-child(7){
+    background-color: var(--tertiary-color);
+}
+.color-box:nth-child(8){
+    background-color: var(--tertiary-color-light);
+}
+.color-box:nth-child(9){
+    background-color: var(--tertiary-color-dark);
+}
+
+// breakpoint testing
+@import "breakpoints.scss";
+main{
+    max-width: $uhd;
+    display: flex;
+    flex-direction: column;
+    div{
+        flex: 1;
+    }
+    @media(min-width: $uhd){}
+    @media(min-width: $full-hd){}
+    @media(min-width: $hd){
+        flex-direction: row;
+    }
+    @media(min-width: $regular){}
+}

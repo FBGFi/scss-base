@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.07em;
+}
+
+// Text portions should not exceed width of 75 characters for readability
+h1,h2,h3,h4,p{
+    max-width: 75ch;
+}

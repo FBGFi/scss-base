@@ -1,0 +1,24 @@
+// creating template of 3 main colors with hsl
+$main-h: 249;
+$main-s: 100%;
+$main-l: 57%;
+$secondary-h: 249;
+$secondary-s: 100%;
+$secondary-l: 27%;
+$tertiary-h: 249;
+$tertiary-s: 24%;
+$tertiary-l: 51%;
+$darken: 10%;
+$lighten: 10%;
+
+:root {
+    --main-color: hsl(#{$main-h}, #{$main-s}, #{$main-l});
+    --main-color-light: hsl(#{$main-h}, #{$main-s}, calc(#{$main-l} + #{$lighten}));
+    --main-color-dark: hsl(#{$main-h}, #{$main-s}, calc(#{$main-l} - #{$darken}));
+    --secondary-color: hsl(#{$secondary-h}, #{$secondary-s}, #{$secondary-l});
+    --secondary-color-light: hsl(#{$secondary-h}, #{$secondary-s}, calc(#{$secondary-l} + #{$darken}));
+    --secondary-color-dark: hsl(#{$secondary-h}, #{$secondary-s}, calc(#{$secondary-l} - #{$darken}));
+    --tertiary-color: hsl(#{$tertiary-h}, #{$tertiary-s}, #{$tertiary-l});
+    --tertiary-color-light: hsl(#{$tertiary-h}, #{$tertiary-s}, calc(#{$tertiary-l} + #{$darken}));
+    --tertiary-color-dark: hsl(#{$tertiary-h}, #{$tertiary-s}, calc(#{$tertiary-l} - #{$darken}));
+}
